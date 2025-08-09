@@ -1,6 +1,16 @@
 {
+  "scripts": {
+    "test": "mocha 'test/**/*.test.js' --timeout 10000"
+  },
   "dependencies": {
+    "chai": "^4.5.0",
     "express": "^5.1.0",
+    "mocha": "^11.7.1",
+    "sinon": "^21.0.0",
     "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "should": "^13.2.3",
+    "supertest": "^7.1.4"
   }
 }
