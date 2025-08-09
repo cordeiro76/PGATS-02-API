@@ -5,8 +5,7 @@ function transfer({ from, to, amount }) {
   const sender = findUserByUsername(from);
   const recipient = findUserByUsername(to);
   if (!sender || !recipient) {
-    //return { error: 'Usuário remetente ou destinatário não encontrado' };
-    return { error: 'Usuário remetente, destinatário encontrado' };
+    return { error: 'Usuário remetente ou destinatário não encontrado' };
   }
   if (sender.saldo < amount) {
     return { error: 'Saldo insuficiente' };
